@@ -1,0 +1,215 @@
+/*
+COLOR PALETTE
+Primary background: #DDFFF7 (white/blue)
+Secondary background: #861657 (purple/red) 
+Text Color 1: #14080E  (black)
+Text Color 2: #93E1D8 (pale blue)
+Extra Color 1: #2E4057 (dark purple)
+Extra Color 2: #FFA69E (cream)
+*/
+
+/* FONTS USED 
+Title: Chango
+Headings: Concert One
+Text: Montserrat Alternates
+*/
+
+/* GLOBAL STYLES */
+
+html {
+    box-sizing:border-box;
+    font-size: 62.5%; /* Note: this sets default to 10px */
+}
+
+html, body {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #DDFFF7;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.15;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    line-height: 1.15;
+    font-size: 3.2rem;
+    color: #2e4057;
+    font-family: "Chango", sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 3.25rem;
+    font-family: "Concert One", sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.50rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 1.50rem;
+}
+
+ul {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 1.45rem;
+}
+
+/* HEADERS */
+
+.title h1 {
+    font-size: 4rem;
+    line-height: 1.30;
+    vertical-align: middle;
+    background-color: #FFA69E;
+    color: #14080E;
+    text-shadow: 1px 1px 3px #2E4057;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 8fr 2fr 8fr;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+header {
+    background-color: #FFA69E;
+    color: #14080E;
+    padding: 7.5px;
+}
+
+/* NAVIGATION */
+ul {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+ul li {
+    font-size: 1.05em;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    background:#FFA69E;
+    color:#2E4057;
+    cursor: pointer;
+}
+ul li:hover {
+    background:#2E4057;
+    color:#FFA69E;   
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolio_wrapper {
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    flex: 1 0 auto;
+}
+
+.Principle_Section {
+    background-color: #2E4057;
+    color: #DDFFF7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.Creativity {
+    text-align: right;
+}
+.Variety {
+    text-align: center;
+}
+.Honesty {
+    text-align: left;
+}
+
+.PrinList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.PriItem {
+    background-color:#14080E; 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Image {
+    background-color: #861657;
+    color: #93E1D8;
+    border-radius: 10px;
+    padding: 30px 15px;
+    margin: 15px;
+}
+
+.Project_List {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.ProjectImage {
+    padding: 5px;
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+Footer {
+    color: #93E1D8;
+    background-color: #2E4057;
+    padding: 10px 25px;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+Footer ul {
+    display: inline-block;
+    flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    .PrinList {
+        display: inline-block;
+        margin: 20px 10px; 
+    }
+    .Project_List {
+        display: inline-block;
+        margin: 15px 5px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
